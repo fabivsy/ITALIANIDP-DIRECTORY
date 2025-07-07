@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Repertorio IDP Italia - Directory Soluzioni Intelligent Document
+      Processing
+    </title>
+    <meta
+      name="description"
+      content="Directory web completo delle migliori soluzioni IDP (Intelligent Document Processing) disponibili in Italia. Include piattaforme pronte all'uso, API per sviluppatori e soluzioni custom. Trova la soluzione perfetta per automatizzare i tuoi documenti aziendali con tecnologie AI avanzate. Confronta prezzi, funzionalità e fornitori per PMI e grandi aziende."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <i
+              class="fas fa-file-invoice text-2xl text-corporate-blue mr-3"
+            ></i>
+            <h1 class="text-xl font-bold text-corporate-blue">
+              Repertorio IDP Italia
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#segnala"
+              class="text-corporate-blue hover:text-accent-teal font-medium"
+              >Segnala una Soluzione</a
+            >
+            <a
+              href="#contatto"
+              class="text-corporate-blue hover:text-accent-teal font-medium"
+              >Contatto</a
+            >
+          </nav>
+          <div class="md:hidden">
+            <button class="text-corporate-blue">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Trova la Migliore Soluzione IDP per la Tua Azienda
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          Esplora e confronta piattaforme, API e partner di sviluppo per
+          automatizzare i tuoi documenti.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        >
+          <div class="flex items-center text-sm">
+            <i class="fas fa-check-circle mr-2"></i>
+            <span>Soluzioni verificate</span>
+          </div>
+          <div class="flex items-center text-sm">
+            <i class="fas fa-star mr-2"></i>
+            <span>Recensioni reali</span>
+          </div>
+          <div class="flex items-center text-sm">
+            <i class="fas fa-shield-alt mr-2"></i>
+            <span>Sicurezza certificata</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="filter-container flex flex-wrap justify-center gap-4">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th-large mr-2"></i>Tutti
+          </button>
+          <button class="filter-btn" data-filter="Piattaforma">
+            <i class="fas fa-desktop mr-2"></i>Piattaforme
+          </button>
+          <button class="filter-btn" data-filter="API">
+            <i class="fas fa-code mr-2"></i>API
+          </button>
+          <button class="filter-btn" data-filter="Custom">
+            <i class="fas fa-cogs mr-2"></i>Soluzioni Custom
+          </button>
+        </div>
+        <div class="mt-6 text-center">
+          <span class="text-sm text-gray-600">
+            <span id="results-count">9</span> soluzioni trovate
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          id="solutions-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Le soluzioni verranno inserite qui tramite JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-blue text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-file-invoice text-2xl mr-3"></i>
+              <h3 class="text-xl font-bold">Repertorio IDP Italia</h3>
+            </div>
+            <p class="text-gray-300">
+              La directory più completa delle soluzioni IDP in Italia per
+              automatizzare i processi documentali.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Categorie</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li><a href="#" class="hover:text-white">Piattaforme</a></li>
+              <li><a href="#" class="hover:text-white">API</a></li>
+              <li><a href="#" class="hover:text-white">Soluzioni Custom</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Risorse</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li><a href="#" class="hover:text-white">Guida IDP</a></li>
+              <li><a href="#" class="hover:text-white">Confronto Prezzi</a></li>
+              <li><a href="#" class="hover:text-white">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Contatti</h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                <i class="fas fa-envelope mr-2"></i> info@repertorioidp.it
+              </li>
+              <li><i class="fas fa-phone mr-2"></i> +39 02 1234 5678</li>
+              <li class="flex space-x-4 mt-4">
+                <a href="#" class="text-gray-300 hover:text-white"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300"
+        >
+          <p>&copy; 2024 Repertorio IDP Italia. Tutti i diritti riservati.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
