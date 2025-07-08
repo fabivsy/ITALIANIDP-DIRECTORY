@@ -36,20 +36,49 @@
           </div>
           <nav class="hidden md:flex space-x-8">
             <a
-              href="#segnala"
+              href="/blog/"
+              class="text-corporate-blue hover:text-accent-teal font-medium"
+              >Blog</a
+            >
+            <a
+              href="https://link.vastfunnel.com/widget/form/zHZWOS6vBVkTpDrAl1d9"
+              target="_blank"
               class="text-corporate-blue hover:text-accent-teal font-medium"
               >Segnala una Soluzione</a
             >
             <a
-              href="#contatto"
+              href="https://link.vastfunnel.com/widget/form/zHZWOS6vBVkTpDrAl1d9"
+              target="_blank"
               class="text-corporate-blue hover:text-accent-teal font-medium"
               >Contatto</a
             >
           </nav>
           <div class="md:hidden">
-            <button class="text-corporate-blue">
+            <button id="mobile-menu-button" class="text-corporate-blue">
               <i class="fas fa-bars"></i>
             </button>
+          </div>
+        </div>
+        <!-- Mobile menu, hidden by default -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <a
+              href="/blog/"
+              class="block px-3 py-2 text-corporate-blue hover:text-accent-teal font-medium"
+              >Blog</a
+            >
+            <a
+              href="https://link.vastfunnel.com/widget/form/zHZWOS6vBVkTpDrAl1d9"
+              target="_blank"
+              class="block px-3 py-2 text-corporate-blue hover:text-accent-teal font-medium"
+              >Segnala una Soluzione</a
+            >
+            <a
+              href="https://link.vastfunnel.com/widget/form/zHZWOS6vBVkTpDrAl1d9"
+              target="_blank"
+              class="block px-3 py-2 text-corporate-blue hover:text-accent-teal font-medium"
+              >Contatto</a
+            >
           </div>
         </div>
       </div>
@@ -179,6 +208,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Structure -->
+    <div id="details-modal" class="modal-hidden">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close-btn">×</button>
+        <div id="modal-body">
+          <!-- Company details will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
